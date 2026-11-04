@@ -119,7 +119,7 @@ const editEmail = document.getElementById('edit-email');
 async function openEditModal(id) {
     try {
         // Percobaan 6-3 Langkah 2
-
+        
         if (response.ok && result.data) {
                        
             // Percobaan 6-3 Langkah 3
@@ -190,7 +190,7 @@ if (formTambah) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dataMahasiswa)
             });
-            
+
             const result = await response.json();
 
             if (response.ok && result.status === 'success') {
